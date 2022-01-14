@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Dongle:wght@30');
+
+
+$light-purple: #a55c7b;
+
+$dark-purple: #3f3349;
+
+$dark-blue: #101b2d;
+
+body {
+    background-color: $dark-blue;
+    color: rgb(223, 223, 223);
+    font-family: monospace;
+    // background: url("https://res.cloudinary.com/drinoux8s/image/upload/v1642195483/a40584b63cf4a7bd703c68752134fdae_xbusba.jpg");
+}
+
+.font-dongle {
+    font-family: 'Dongle', sans-serif;
+}
+
+
+
+.purple-title {
+    color: $light-purple;
+    text-shadow: 2px 2px $dark-purple;
+}
+
+.standard-button {
+    @apply py-2 px-3;
+
+    &.purple-button {
+        background-color: $light-purple;
+        color: black;
+    }
+
+}
+
+.typewriter {
+    width: fit-content;
+    @apply mx-auto;
+}
+
+.typewriter h3 {
+    width: fit-content;
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+
+hr {
+    height: 1px;
+    background: white;
+    border: none;
+    outline: none;
+    margin: 3em 3em 5em;
+    position: relative;
+
+    &:before {
+
+        content: attr(data-symbol);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background: black;
+        color: white;
+        padding: 0.5em 3em;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+
+hr#one {
+    width: 50%;
+    margin: 3em auto;
+}
