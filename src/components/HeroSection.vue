@@ -1,5 +1,8 @@
 <template>
-  <section class="hero py-14 lg:py-60 flex justify-center items-center">
+  <section
+    id="header"
+    class="hero py-14 lg:py-60 flex justify-center items-center"
+  >
     <div class="profile-img-wrapper w-1/4 sm:w-1/6 mr-2 sm:mr-10">
       <img
         src="https://res.cloudinary.com/drinoux8s/image/upload/v1642196828/almog_sytlh6.png"
@@ -7,7 +10,7 @@
     </div>
     <div>
       <h1 class="text-2xl sm:text-3xl lg:text-6xl">Hi, I'm Almog 👋</h1>
-      <div class="typewriter">
+      <div class="typewriter mb-2">
         <h3 class="text-sm sm:text-xl lg:text-3xl">A full stack developer</h3>
       </div>
       <ul class="space-x-3 xl:text-xl">

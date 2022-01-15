@@ -23,6 +23,7 @@ body {
     // background: url("https://res.cloudinary.com/drinoux8s/image/upload/v1642195483/a40584b63cf4a7bd703c68752134fdae_xbusba.jpg");
 }
 
+
 .purple-container {
     background-color: $dark-purple;
 }
@@ -59,8 +60,17 @@ body {
 }
 
 .clean-purple-button {
-    @apply p-1;
-    border: 2px solid $light-purple;
+    @apply p-1 cursor-pointer;
+    font-weight: bold;
+    color: $dark-purple;
+    background-color: #a55c7aa2;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: #d482a5a2;
+        ;
+    }
+
 }
 
 .typewriter {
