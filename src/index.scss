@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css?family=Dongle:wght@30');
 
+$lightest-purple: #f7b7d1;
 
 $light-purple: #a55c7b;
 
@@ -21,7 +22,9 @@ body {
     font-family: 'Dongle', sans-serif;
 }
 
-
+.purple-border {
+    border: 2px solid $light-purple;
+}
 
 .purple-title {
     color: $light-purple;
@@ -32,8 +35,16 @@ body {
     @apply py-2 px-3;
 
     &.purple-button {
-        background-color: $light-purple;
-        color: black;
+        color: $light-purple;
+        border: 2px solid $light-purple;
+        transition: all .5s;
+
+        &:hover {
+            border-color: $lightest-purple;
+            color: $lightest-purple;
+            box-shadow: 0 0.5em 2em -0.5em $lightest-purple;
+            transform: translateY(-0.25em);
+        }
     }
 
 }

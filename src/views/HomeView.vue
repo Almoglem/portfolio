@@ -1,8 +1,8 @@
 <template>
   <div>
     <HeroSection />
-    <MyProjects class="p-20" />
-    <AboutMe />
+    <MyProjects class="p-10 lg:p-20" />
+    <AboutMe class="p-10 lg:p-20" />
   </div>
 </template>
 

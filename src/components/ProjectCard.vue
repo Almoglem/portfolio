@@ -14,7 +14,7 @@
         </p>
         <button class="standard-button purple-button">
           <a :href="project.url" class="flex items-center mx-auto font-bold">
-            <span class="mr-2"> Check me out </span>
+            <span class="mr-2 text-lg"> Check me out </span>
             <span class="material-icons"> rocket_launch </span></a
           >
         </button>

@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 class="text-4xl mb-6">My projects</h1>
+  <div class="flex flex-col items-center">
+    <h1 class="text-2xl sm:text-4xl sm:mb-6 purple-title">My projects</h1>
     <hr id="one" data-symbol="AAA" />
     <div v-for="project in projects" :key="project.title">
       <ProjectCard :project="project" />
@@ -9,8 +9,8 @@
     <a
       href="https://github.com/Almoglem"
       target="_blank"
-      class="p-2 font-bold text-xl flex items-center mx-auto"
-      >Check out more of my projects in my github!
+      class="p-2 font-bold sm:text-xl flex items-center"
+      >View more of my projects in my github!
       <span class="material-icons"> output </span></a
     >
   </div>
