@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center" id="my-projects">
-    <h1 class="text-2xl sm:text-4xl sm:mb-6 purple-title">My projects</h1>
+    <h1 class="text-2xl sm:text-4xl sm:mb-6 purple-title">My Projects</h1>
     <hr id="one" data-symbol="AAA" />
     <div v-for="project in projects" :key="project.title">
       <ProjectCard :project="project" />
