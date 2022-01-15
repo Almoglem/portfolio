@@ -10,7 +10,26 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-
+  {
+    path: '/header',
+    name: 'header',
+    component: HomeView
+  },
+  {
+    path: '/my-projects',
+    name: 'projects',
+    component: HomeView
+  },
+  {
+    path: '/about-me',
+    name: 'about-me',
+    component: HomeView
+  },
+  {
+    path: '/footer',
+    name: 'footer',
+    component: HomeView
+  },
 ]
 
 const router = new VueRouter({
