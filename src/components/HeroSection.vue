@@ -6,10 +6,15 @@
       />
     </div>
     <div>
-      <h1 class="text-lg sm:text-3xl lg:text-6xl">Hi, I'm Almog 👋</h1>
+      <h1 class="text-2xl sm:text-3xl lg:text-6xl">Hi, I'm Almog 👋</h1>
       <div class="typewriter">
-        <h3 class="text-xs sm:text-xl lg:text-3xl">A full stack developer</h3>
+        <h3 class="text-sm sm:text-xl lg:text-3xl">A full stack developer</h3>
       </div>
+      <ul class="space-x-3 xl:text-xl">
+        <a href="#my-projects" class="clean-purple-button">My projects</a>
+        <a href="#about-me" class="clean-purple-button">About me</a>
+        <a href="#footer" class="clean-purple-button">Contact me</a>
+      </ul>
     </div>
   </section>
 </template>

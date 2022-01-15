@@ -11,11 +11,20 @@ $dark-purple: #3f3349;
 
 $dark-blue: #101b2d;
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     background-color: $dark-blue;
     color: rgb(223, 223, 223);
     font-family: monospace;
     // background: url("https://res.cloudinary.com/drinoux8s/image/upload/v1642195483/a40584b63cf4a7bd703c68752134fdae_xbusba.jpg");
+}
+
+.purple-container {
+    background-color: $dark-purple;
 }
 
 .font-dongle {
@@ -47,6 +56,11 @@ body {
         }
     }
 
+}
+
+.clean-purple-button {
+    @apply p-1;
+    border: 2px solid $light-purple;
 }
 
 .typewriter {

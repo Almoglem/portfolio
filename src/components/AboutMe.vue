@@ -1,11 +1,36 @@
 <template>
-  <section class="bg-black flex flex-col items-center">
-    <h1 class="text-2xl sm:text-4xl mb-10 sm:mb-20 purple-title">
-      Get to know me!
-    </h1>
+  <section
+    class="bg-black flex flex-col items-center about-me space-y-12"
+    id="about-me"
+  >
+    <h1 class="text-2xl sm:text-4xl purple-title">Get to know me!</h1>
+
+    <div class="flex flex-wrap space-x-5 justify-center">
+      <i class="devicon-git-plain colored"></i>
+      <i class="devicon-nuxtjs-plain colored"></i>
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+      />
+      <i class="devicon-react-original colored"></i>
+      <i class="devicon-mongodb-plain colored"></i>
+      <i class="devicon-sass-original colored"></i>
+      <i class="devicon-tailwindcss-plain colored"></i>
+      <i class="devicon-nodejs-plain colored"></i>
+      <i class="devicon-socketio-original"></i>
+      <i class="devicon-docker-plain colored"></i>
+    </div>
 
     <div
-      class="font-dongle p-2 text-2xl purple-border p-3 xl:w-3/5 2xl:text-3xl"
+      class="
+        font-dongle
+        p-2
+        text-2xl
+        purple-border
+        p-3
+        md:text-3xl
+        xl:w-4/5
+        2xl:w-3/5
+      "
     >
       <p class="mb-2">
         Iv'e always been passionate about web development, even before knowing
@@ -35,12 +60,23 @@
 </template>
 
 <style lang="scss">
-// .profile-img-wrapper {
-//   width: 300px;
-//   img {
-//     width: 100%;
-//     border-radius: 50%;
-//     // box-shadow: 0px 2px 20px 17px #a55c7a52;
-//   }
-// }
+.about-me {
+  i {
+    font-size: 60px;
+  }
+  img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    i {
+      font-size: 40px;
+    }
+    img {
+      width: 40px;
+    }
+  }
+}
 </style>

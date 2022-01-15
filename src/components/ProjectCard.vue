@@ -24,18 +24,12 @@
 </template>
 
 <script>
-// import { Carousel, Slide } from "vue-carousel";
-
 export default {
-  //   compnents: { Carousel, Slide },
   props: {
     project: {
       type: Object,
       required: true,
     },
-  },
-  created() {
-    console.log(this.project);
   },
 };
 </script>
