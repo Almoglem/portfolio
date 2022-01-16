@@ -33,7 +33,7 @@
       "
     >
       <p class="mb-2">
-        Iv'e always been passionate about web development, even before knowing
+        I've always been passionate about web development, even before knowing
         what it was. funny, right? but as a little girl playing my favorite
         virtual pets game, I somehow dug into the source code and realized I can
         modify it to my liking, making it appear as I own some rare pets by

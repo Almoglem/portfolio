@@ -1,14 +1,18 @@
 <template>
   <div class="purple-container py-5 footer" id="footer">
-    <div class="space-x-2">
+    <div class="space-x-2 flex items-center justify-center">
       <button @click="openMail" class="text-2xl">
         <span class="material-icons"> email </span>
       </button>
       <button>
         <a href="https://github.com/Almoglem" target="_blank">
-          <img
-            src="https://res.cloudinary.com/drinoux8s/image/upload/v1642275346/GitHub-Mark-Light-32px_isbl7r.png"
-        /></a>
+          <i class="devicon-github-original"></i>
+        </a>
+      </button>
+      <button>
+        <a href="https://www.linkedin.com/in/almog-lemberg-a4180619a/">
+          <i class="devicon-linkedin-plain"></i>
+        </a>
       </button>
     </div>
   </div>
@@ -26,8 +30,12 @@ export default {
 
 <style lang="scss">
 .footer {
-  .material-icons {
+  .material-icons,
+  i {
     font-size: 32px;
+    &:hover {
+      color: rgb(230, 193, 193);
+    }
   }
 }
 </style>
